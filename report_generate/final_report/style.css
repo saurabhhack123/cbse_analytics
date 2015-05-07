@@ -1,0 +1,248 @@
+.heading{
+    font-family: 'Comfortaa',cursive;font-size: 35px;margin-top:10%;text-align: center;
+    color: darkgrey;
+}
+
+.accordion-style{
+    width: 50%;
+    margin-left: 25%;
+
+}
+.btn {
+    background: #262c30;
+    background-image: -webkit-linear-gradient(top, #262c30, #094a73);
+    background-image: -moz-linear-gradient(top, #262c30, #094a73);
+    background-image: -ms-linear-gradient(top, #262c30, #094a73);
+    background-image: -o-linear-gradient(top, #262c30, #094a73);
+    background-image: linear-gradient(to bottom, #262c30, #094a73);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+.labels{
+    color: #f5f5f5;
+    font-family: 'Comfortaa',cursive;
+    font-size: 20px;
+    margin-top: 3%;
+}
+.tdstyle
+{
+    text-align: center;
+}
+.text{
+    color: #f5f5f5;
+    font-family: 'Comfortaa',cursive;
+    font-size: 15px;
+    margin-top: 3%;
+}
+.tabletext{
+    color: #f5f5f5;
+    font-family: 'Comfortaa',cursive;
+    font-size: 18px;
+    margin-top: 3%;
+    text-align: left;
+    padding-top: 10px;
+}
+.tabletext2{
+    color: #f5f5f5;
+    font-family: 'Comfortaa',cursive;
+    font-size: 18px;
+    margin-top: 3%;
+    text-align: left;
+    padding-left: 63px;
+    padding-top: 10px;
+}
+.tabletext3{
+    color: #f5f5f5;
+    font-family: 'Comfortaa',cursive;
+    font-size: 18px;
+    margin-top: 3%;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+.tabletext4{
+    color: #f5f5f5;
+    font-family: 'Comfortaa',cursive;
+    font-size: 18px;
+    margin-top: 3%;
+    text-align: left;
+    padding-left: 95px;
+    padding-top: 10px;
+}
+
+.school_logo{
+    margin-left: 42%;
+    width:140px;
+    margin-top: 5%;
+}
+
+.schoolcom_div
+{
+    page-break-after: always;
+   text-align: center;
+    position: relative;
+
+}
+
+
+.circle_diff_green
+{   margin-top: -2%;
+    padding-left: 3px;
+    padding-right: 12px;
+    border-radius: 100px;
+    height: 22px;
+    width: 30px;
+    text-align: center;
+    margin-left: -20%;
+
+    background-color: darkgreen;
+    color: white;
+}
+.circle_diff_red
+{margin-top: -2%;
+    margin-left: -20%;
+    padding-left: 3px;
+    padding-right: 12px;
+    border-radius: 100px;
+    height: 22px;
+    width: 30px;
+    text-align: center;
+
+    background-color: #ff0000;
+    color: white;
+}
+.circle_diff_blue
+{
+    padding-left: 3px;
+    padding-right: 12px;
+    border-radius: 100px;
+    height: 22px;
+    width: 30px;
+    text-align: center;
+    margin-top: -2%;
+    margin-left: -20%;
+    background-color: cadetblue;
+    color:white;
+}
+.table_label{
+    margin-top: 2%;
+}
+
+
+.circle_small_green
+{
+
+    border-radius: 100px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: darkgreen;
+    color: white;
+    font-size: 12px;
+
+
+
+}
+.circle_small_red
+{
+
+    border-radius: 100px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #ff0000;
+    color: white;
+    font-size: 12px;
+
+}
+.circle_small_blue
+{
+
+    border-radius: 100px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: cadetblue;
+    color:white;
+    font-size: 12px;
+
+
+}
+
+.pg-brk{
+    page-break-before: always;
+}
+.pg-brk-after{
+    page-break-after: always;
+}
+.school_address{
+    font-family: 'Comfortaa',cursive;font-size: 20px;margin-top:5%;text-align: center;
+    color: darkgreen;
+}
+.result_analysis{
+    font-family: 'Comfortaa',cursive;font-size: 35px;margin-top:5%;text-align: center;
+    color: white;background-color: green;height: 100px;
+
+}
+.small_heading{
+    font-family: 'Comfortaa',cursive;font-size: 18px;margin-top:5%;text-align: center;
+    color: darkgray;
+}
+.school_mainpage_logo{
+    margin-left:45%;
+    width:140px;
+    margin-top: 20%;
+    page-break-after: always;
+}
+
+.heading_first_text{
+    font-family: 'Comfortaa',cursive;font-size: 30px;
+
+}
+.heading_second_text{
+    font-family: 'Comfortaa',cursive;font-size: 30px;color: green;
+
+}
+.school_logo_normal{
+   margin-top: -1.5%;
+    width:140px;
+
+}
+
+.normal_text{
+    font-family: 'Lucida Sans',cursive;font-size: 20px;
+}
+
+.small_text{
+    font-family: 'Lucida Sans',cursive;font-size: 17px; color: darkgray;
+}
+.small_heading_2{
+    font-family: 'Comfortaa',cursive;font-size: 24px;
+
+}
+
+.table_text_1{
+    font-family: 'Lucida Sans',cursive;font-size: 17px; color: darkgray;
+}
+.table_text_2{
+    font-family: 'Lucida Sans',cursive;font-size: 17px; color: black;font-weight: bold;
+}

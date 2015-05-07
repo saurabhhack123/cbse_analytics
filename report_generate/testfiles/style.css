@@ -1,0 +1,201 @@
+.heading{
+    font-family: 'Comfortaa',cursive;font-size: 30px;margin-top:10%;text-align: center;
+}
+
+.accordion-style{
+    width: 50%;
+    margin-left: 25%;
+
+}
+.btn {
+    background: #262c30;
+    background-image: -webkit-linear-gradient(top, #262c30, #094a73);
+    background-image: -moz-linear-gradient(top, #262c30, #094a73);
+    background-image: -ms-linear-gradient(top, #262c30, #094a73);
+    background-image: -o-linear-gradient(top, #262c30, #094a73);
+    background-image: linear-gradient(to bottom, #262c30, #094a73);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+.labels{
+    color: #f5f5f5;
+    font-family: 'Comfortaa',cursive;
+    font-size: 20px;
+    margin-top: 3%;
+}
+.tdstyle
+{
+    text-align: center;
+}
+.text{
+    color: #f5f5f5;
+    font-family: 'Comfortaa',cursive;
+    font-size: 15px;
+    margin-top: 3%;
+}
+.tabletext{
+    color: #f5f5f5;
+    font-family: 'Comfortaa',cursive;
+    font-size: 18px;
+    margin-top: 3%;
+    text-align: left;
+    padding-top: 10px;
+}
+.tabletext2{
+    color: #f5f5f5;
+    font-family: 'Comfortaa',cursive;
+    font-size: 18px;
+    margin-top: 3%;
+    text-align: left;
+    padding-left: 63px;
+    padding-top: 10px;
+}
+.tabletext3{
+    color: #f5f5f5;
+    font-family: 'Comfortaa',cursive;
+    font-size: 18px;
+    margin-top: 3%;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+.tabletext4{
+    color: #f5f5f5;
+    font-family: 'Comfortaa',cursive;
+    font-size: 18px;
+    margin-top: 3%;
+    text-align: left;
+    padding-left: 95px;
+    padding-top: 10px;
+}
+
+.school_logo{
+    margin-left: 42%;
+    width:140px;
+    margin-top: 11%;
+}
+
+.schoolcom_div
+{
+    page-break-after: always;
+   text-align: center;
+    position: relative;
+
+}
+
+
+.circle_diff_green
+{   padding-top: 8px;
+    padding-left: 3px;
+    padding-right: 12px;
+    border-radius: 100px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: darkgreen;
+    color: white;
+}
+.circle_diff_red
+{ padding-top: 8px;
+    padding-left: 3px;
+    padding-right: 12px;
+    border-radius: 100px;
+    height: 26px;
+    width: 26px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #ff0000;
+    color: white;
+}
+.circle_diff_blue
+{ padding-top: 8px;
+    padding-left: 3px;
+    padding-right: 12px;
+    border-radius: 100px;
+    height: 26px;
+    width: 26px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: cadetblue;
+    color:white;
+}
+.table_label{
+    margin-top: 2%;
+}
+
+
+.circle_small_green
+{
+
+    border-radius: 100px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: darkgreen;
+    color: white;
+    font-size: 12px;
+    float: right;
+
+}
+.circle_small_red
+{
+
+    border-radius: 100px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #ff0000;
+    color: white;
+    font-size: 12px;
+    float: right;
+}
+.circle_small_blue
+{
+
+    border-radius: 100px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: cadetblue;
+    color:white;
+    font-size: 12px;
+    float: right;
+
+}
+@media screen {
+    .divFooter {
+        display: none;
+    }
+}
+@media print {
+   .divFooter {
+        position: fixed;
+        top:0;
+        margin-left:500px;
+        float: right;
+    }
+}
+
+.pg-brk{
+    page-break-before: always;
+}
