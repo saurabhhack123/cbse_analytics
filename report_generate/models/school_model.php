@@ -45,6 +45,7 @@ class SchoolReport2
         $this->group_distribution=get_group_distribution($school_id);
 
 
+<<<<<<< HEAD
         $this->prev_topper_list=topper_model($school_id,2);
         $this->prev_school_avg=get_school_avg($school_id,2);
         $this->prev_students_registered=get_students_registered($school_id,2);
@@ -57,6 +58,20 @@ class SchoolReport2
         $this->prev_group_toppers=get_group_toppers($school_id,2);
         $this->prev_stream_toppers=get_stream_toppers($school_id,2);
         $this->prev_group_distribution=get_group_distribution($school_id,2);
+=======
+        $this->prev_topper_list=topper_model($school_id,1);
+        $this->prev_school_avg=get_school_avg($school_id,1);
+        $this->prev_students_registered=get_students_registered($school_id,1);
+        $this->prev_absentees=get_absentees($school_id,1);
+        $this->prev_appeared=$this->prev_students_registered-$this->prev_absentees;
+        $this->prev_passed=get_pass_percent($school_id,$this->prev_appeared,1);
+        $this->prev_no_of_centums=get_centums($school_id,1);
+        $this->prev_marks_distribution=get_marks_distribution($school_id,1);
+        $this->prev_distinctions=get_distinctions($school_id,1);
+        $this->prev_group_toppers=get_group_toppers($school_id,1);
+        $this->prev_stream_toppers=get_stream_toppers($school_id,1);
+        $this->prev_group_distribution=get_group_distribution($school_id,1);
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
     }
 
 

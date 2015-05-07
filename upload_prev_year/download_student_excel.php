@@ -20,7 +20,11 @@ while($row=mysql_fetch_array($res_subject))
 $tab_separated_values[] = $headings;
 
 
+<<<<<<< HEAD
 $sql_fetch_students="select * from cbse_students where  GroupId!=0 and RegNo is not null  and BatchId=3 and SchoolId='$school_id' order by RegNo";
+=======
+$sql_fetch_students="select * from cbse_students where  GroupId!=0 and RegNo is not null  and BatchId=2 and SchoolId='$school_id' order by RegNo";
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 
 
 $res_fetch_students=mysql_query($sql_fetch_students)or die($sql_fetch_students . " Error fetching Classes: ". mysql_error()) ;

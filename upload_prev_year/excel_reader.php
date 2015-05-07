@@ -23,8 +23,14 @@ $total_excel_cols = $data->sheets[0]['numCols'];
 
 $i=2;
 while($i<=$total_excel_rows)
+<<<<<<< HEAD
 {   $sub_ids=array();
    $name=trim($data->sheets[0]['cells'][$i][2]);
+=======
+{   
+    $sub_ids=array();
+    $name=trim($data->sheets[0]['cells'][$i][2]);
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 
     $roll_no=trim($data->sheets[0]['cells'][$i][3]);
     $section=trim($data->sheets[0]['cells'][$i][5]);
@@ -70,15 +76,25 @@ var_dump("done");
 
 function insert_student($stud_id,$reg_no,$section,$group_id,$name)
 {
+<<<<<<< HEAD
     $sql="insert into cbse_students(StudentId,SchoolId,BatchId,Section,GroupId,StudentName,RegNo) values('$stud_id',40,1,'$section','$group_id','$name','$reg_no')";
   // var_dump($sql);
+=======
+    $sql="insert into cbse_students(StudentId,SchoolId,BatchId,Section,GroupId,StudentName,RegNo) values('$stud_id',40,3,'$section','$group_id','$name','$reg_no')";
+  var_dump($sql);
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
     $res=mysql_query($sql);
 }
 
 
 function get_group_id($subjects_string)
+<<<<<<< HEAD
 { $sql="select GroupId from cbse_groups where SubjectIds='$subjects_string'";
    // var_dump($sql);
+=======
+{   $sql="select GroupId from cbse_groups where SubjectIds='$subjects_string'";
+    var_dump($sql);
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
     $res=mysql_query($sql);
     $row=mysql_fetch_array($res);
     $group_id=$row["GroupId"];
@@ -87,18 +103,31 @@ function get_group_id($subjects_string)
 function insert_marks($sub_id,$mark,$reg_no,$school_id)
 {
     $sql="insert into cbse_marks(SchoolId,RegNo,SubjectId,Marks) values ('$school_id','$reg_no','$sub_id','$mark')";
+<<<<<<< HEAD
    // var_dump($sql);
    $res=mysql_query($sql);
+=======
+    var_dump($sql);
+    $res=mysql_query($sql);
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 
 }
 
 function get_lang_id($lang)
 {   $sql="select SubjectId from cbse_subject where SubjectName like '%$lang%'";
+<<<<<<< HEAD
    // var_dump($sql);
     $res=mysql_query($sql);
     $row=mysql_fetch_array($res);
     $lang_id=$row["SubjectId"];
    // var_dump($lang_id);
+=======
+    var_dump($sql);
+    $res=mysql_query($sql);
+    $row=mysql_fetch_array($res);
+    $lang_id=$row["SubjectId"];
+    var_dump($lang_id);
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
     return $lang_id;
 
 }
@@ -110,4 +139,8 @@ header("Location:upload_marks.php?success=1");
 function v($data){
     var_dump($data);
     echo "<br>";
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb

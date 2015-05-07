@@ -15,7 +15,11 @@ function get_subject_details($subject_id)
 
 }
 
+<<<<<<< HEAD
 function get_nof_students($subject_id,$school_id,$batch_id=3)
+=======
+function get_nof_students($subject_id,$school_id,$batch_id=2)
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 {
     $sql="select * from cbse_marks where SubjectId='$subject_id' and SchoolId='$school_id' and RegNo in (Select RegNo from cbse_students where BatchId='$batch_id')";
     $res=query_res($sql);
@@ -23,7 +27,11 @@ function get_nof_students($subject_id,$school_id,$batch_id=3)
 
 }
 
+<<<<<<< HEAD
 function get_average_subject_marks($subject_id,$school_id,$no_of_students,$batch_id=3)
+=======
+function get_average_subject_marks($subject_id,$school_id,$no_of_students,$batch_id=2)
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 {   $total_mark=0;
 
     $sql="select * from cbse_marks where SubjectId='$subject_id' and SchoolId='$school_id' and RegNo in (Select RegNo from cbse_students where BatchId='$batch_id')";
@@ -40,7 +48,11 @@ function get_average_subject_marks($subject_id,$school_id,$no_of_students,$batch
     return $avg;
 }
 
+<<<<<<< HEAD
 function get_subject_centums($subject_id,$school_id,$batch_id=3)
+=======
+function get_subject_centums($subject_id,$school_id,$batch_id=2)
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 {   $sql="select * from cbse_marks where SubjectId='$subject_id' and SchoolId='$school_id' and Marks=200 and RegNo in (Select RegNo from cbse_students where BatchId='$batch_id')";
     $res=query_res($sql);
     return mysql_num_rows($res);
@@ -51,7 +63,11 @@ function get_subject_centums($subject_id,$school_id,$batch_id=3)
 
 
 
+<<<<<<< HEAD
 function get_subject_marks_distribution($subject_id,$school_id,$batch_id=3)
+=======
+function get_subject_marks_distribution($subject_id,$school_id,$batch_id=2)
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 {
     $marks_distribution=array();
 
@@ -139,7 +155,11 @@ function cbse_school_model($school_id)
 }
 
 
+<<<<<<< HEAD
 function topper_model($school_id,$batch_id=3)
+=======
+function topper_model($school_id,$batch_id=2)
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 {
     $topper_model=array();
 
@@ -180,7 +200,11 @@ function get_batch_name($batch_id)
     $row=mysql_fetch_array($res);
     return $row["EndYear"];
 }
+<<<<<<< HEAD
 function get_school_avg($school_id,$batch_id=3)
+=======
+function get_school_avg($school_id,$batch_id=2)
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 {
     $school_avg=0;
     $sql="select RegNo, sum(Marks) as sum_marks from cbse_marks where SchoolId='$school_id' and RegNo not in  (select distinct Regno from cbse_marks where marks<80) and RegNo in (select Regno from cbse_students where BatchId='$batch_id' ) group by RegNo  ";
@@ -199,7 +223,11 @@ function get_school_avg($school_id,$batch_id=3)
     return $school_avg;
 }
 
+<<<<<<< HEAD
 function get_students_registered($school_id,$batch_id=3)
+=======
+function get_students_registered($school_id,$batch_id=2)
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 {
     $no_students=0;
     $sql="select count(RegNo) as CountRows from cbse_students where SchoolId='$school_id'and RegNo in (select regno from cbse_students where BatchId='$batch_id') ";
@@ -209,7 +237,11 @@ function get_students_registered($school_id,$batch_id=3)
    return $no_students;
 }
 
+<<<<<<< HEAD
 function get_absentees($school_id,$batch_id=3)
+=======
+function get_absentees($school_id,$batch_id=2)
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 {
     $sql="select distinct RegNo from cbse_marks where Marks=0 and SchoolId='$school_id' and RegNo in (select Regno from cbse_students where BatchId='$batch_id')";
     $res=query_res($sql);
@@ -217,7 +249,11 @@ function get_absentees($school_id,$batch_id=3)
 return mysql_num_rows($res);
 }
 
+<<<<<<< HEAD
 function get_pass_percent($school_id,$appeared,$batch_id=3)
+=======
+function get_pass_percent($school_id,$appeared,$batch_id=2)
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 {
     $pass_percent=0;
 
@@ -229,7 +265,11 @@ function get_pass_percent($school_id,$appeared,$batch_id=3)
  return  $pass_percent;
 }
 
+<<<<<<< HEAD
 function get_centums($school_id,$batch_id=3)
+=======
+function get_centums($school_id,$batch_id=2)
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 {
     $no_of_centums=0;
     $sql="select * from cbse_marks where SchoolId='$school_id' and marks=200 and RegNo in (Select RegNo from cbse_students where BatchId='$batch_id')";
@@ -238,7 +278,11 @@ function get_centums($school_id,$batch_id=3)
     return mysql_num_rows($res);
 }
 
+<<<<<<< HEAD
 function get_marks_distribution($school_id,$batch_id=3)
+=======
+function get_marks_distribution($school_id,$batch_id=2)
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 {
     $marks_distribution=array();
 
@@ -304,7 +348,11 @@ function get_marks_distribution($school_id,$batch_id=3)
 
 
 
+<<<<<<< HEAD
 function get_distinctions($school_id,$batch_id=3)
+=======
+function get_distinctions($school_id,$batch_id=2)
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 {
 
 
@@ -347,7 +395,11 @@ function get_group_abbrev($group_id)
 }
 
 
+<<<<<<< HEAD
 function get_group_average($group_id,$school_id,$batch_id=3)
+=======
+function get_group_average($group_id,$school_id,$batch_id=2)
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 {
     $average=0;
 
@@ -369,7 +421,11 @@ function get_group_average($group_id,$school_id,$batch_id=3)
 
 }
 
+<<<<<<< HEAD
 function get_group_students($group_id,$school_id,$batch_id=3)
+=======
+function get_group_students($group_id,$school_id,$batch_id=2)
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 {
 
 
@@ -386,7 +442,11 @@ function get_group_students($group_id,$school_id,$batch_id=3)
 }
 
 
+<<<<<<< HEAD
 function get_group_marks_distribution($group_id,$school_id,$batch_id=3)
+=======
+function get_group_marks_distribution($group_id,$school_id,$batch_id=2)
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 {
 
     $marks_distribution=array();
@@ -451,7 +511,11 @@ function get_group_marks_distribution($group_id,$school_id,$batch_id=3)
 
 }
 
+<<<<<<< HEAD
 function get_group_toppers($school_id,$batch_id=3)
+=======
+function get_group_toppers($school_id,$batch_id=2)
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 {
     $result=array();
     $sql_pcmc="select RegNo,sum(marks) as sum_marks from cbse_marks where RegNo in(Select Regno from cbse_students where BatchId='$batch_id' and (GroupId=1 or GroupId=2 or GroupId=3 or GroupId=4) and SchoolId='$school_id') and SchoolId='$school_id' group by RegNo order by sum(marks) desc ";
@@ -602,7 +666,11 @@ function get_group_toppers($school_id,$batch_id=3)
 }
 
 
+<<<<<<< HEAD
 function get_stream_toppers($school_id,$batch_id=3)
+=======
+function get_stream_toppers($school_id,$batch_id=2)
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 {
     $result=array();
     $sql_pcmc="select RegNo,sum(marks) as sum_marks from cbse_marks where RegNo in(Select Regno from cbse_students where BatchId='$batch_id' and (GroupId=1 or GroupId=2 or GroupId=3 or GroupId=4 or GroupId=5 or GroupId=6 or GroupId=7 or GroupId=8) and SchoolId='$school_id') and SchoolId='$school_id' group by RegNo order by sum(marks) desc ";
@@ -690,7 +758,11 @@ function get_student_section($reg_no)
 
 
 
+<<<<<<< HEAD
 function get_group_distribution($school_id,$batch_id=3)
+=======
+function get_group_distribution($school_id,$batch_id=2)
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 {
     $result=array();
     $result[1]["Name"]="Science w Computers";

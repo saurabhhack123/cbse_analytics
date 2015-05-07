@@ -70,7 +70,11 @@ function SubjectGroups()
 function GetStudents($school_id,$group_id)
 {   $result="";
 
+<<<<<<< HEAD
     $sql="select * from cbse_students where SchoolId='$school_id' and GroupId=0 or GroupId='$group_id' and BatchId=3";
+=======
+    $sql="select * from cbse_students where SchoolId='$school_id' and GroupId=0 or GroupId='$group_id' and BatchId=2";
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 
     $res=mysql_query($sql)or die($sql . " Error fetching Classes: " . mysql_error());
     while($row=mysql_fetch_array($res))
@@ -93,7 +97,11 @@ function GetStudents($school_id,$group_id)
 }
 function SaveStudents($group_id,$students)
 {
+<<<<<<< HEAD
     $sql_test="select * from cbse_students where GroupId='$group_id' and BatchId=3";
+=======
+    $sql_test="select * from cbse_students where GroupId='$group_id' and BatchId=2";
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
     $res_test=mysql_query($sql_test)or die($sql_test . " Error fetching Classes: " . mysql_error());
     $original_list=array();
     while($row=mysql_fetch_array($res_test))

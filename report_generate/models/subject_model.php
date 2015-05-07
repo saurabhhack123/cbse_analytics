@@ -20,10 +20,17 @@ class SubjectReport
         $this->average=get_average_subject_marks($subject_id,$school_id,$this->no_of_students);
         $this->centums=get_subject_centums($subject_id,$school_id);
         $this->marks_distribution=get_subject_marks_distribution($subject_id,$school_id);
+<<<<<<< HEAD
         $this->prev_no_of_students = get_nof_students($subject_id, $school_id,2);
         $this->prev_average=get_average_subject_marks($subject_id,$school_id,$this->prev_no_of_students,2);
         $this->prev_centums=get_subject_centums($subject_id,$school_id,2);
         $this->prev_marks_distribution=get_subject_marks_distribution($subject_id,$school_id,2);
+=======
+        $this->prev_no_of_students = get_nof_students($subject_id, $school_id,1);
+        $this->prev_average=get_average_subject_marks($subject_id,$school_id,$this->prev_no_of_students,1);
+        $this->prev_centums=get_subject_centums($subject_id,$school_id,1);
+        $this->prev_marks_distribution=get_subject_marks_distribution($subject_id,$school_id,1);
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 
     }
 

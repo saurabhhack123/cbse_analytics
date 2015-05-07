@@ -2,7 +2,9 @@
 
 include_once "../models/subject_model.php";
 include_once "../models/school_model.php";
-//include_once "../../../../../includes/includes.php";
+
+include_once "../../../../../includes/includes.php";
+
 
 
 $school_id = 40;
@@ -27,8 +29,12 @@ $school_id = 40;
             $("#school_logo").attr('src', "../../../schoolinfo/logo/S" + school_id + ".png");
 
             $.get("test_ajax.php", {Request: "GetSchoolData"}, function (data) {
+<<<<<<< HEAD
                 console.log(data);
                 console.log('here');
+=======
+
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
                 data = $.parseJSON(data);
                 var school_name = data["school"]["SchoolName"];
                 var school_address=data["school"]["Address"];
@@ -39,9 +45,14 @@ $school_id = 40;
                 get_toppers_list(data);
                 get_stream_toppers(data);
                 $.get("test_ajax.php", {Request: "GetSubjectData"}, function (data2) {
+<<<<<<< HEAD
                     
                     data2 = $.parseJSON(data2);
                     
+=======
+                    data2 = $.parseJSON(data2);
+
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 
                     subject_wise_marks_distribution_chart(data2);
                     fill_subject_average_table(data2);

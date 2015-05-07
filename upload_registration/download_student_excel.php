@@ -12,7 +12,11 @@ $tab_separated_values[] = "SchoolComId\tName\tRegNo";
 
 
 $sql_fetch_students="select * from students where ClassId in (Select ClassId from Class where ClassName='XII' and SchoolId='$school_id')";
+<<<<<<< HEAD
 //$sql_fetch_students="select * from cbse_students where BatchId=3";
+=======
+//$sql_fetch_students="select * from cbse_students where BatchId=2";
+>>>>>>> 6a5d05b2fc1e617ea619a77f7e184d8652cc85eb
 $res_fetch_students=mysql_query($sql_fetch_students)or die($sql_fetch_students . " Error fetching Classes: ". mysql_error()) ;
 
 
